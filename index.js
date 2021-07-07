@@ -1,11 +1,11 @@
 function App() {
-  const [displayTime, setDisplayTime] = React.useState(5)
-  const [breakTime, setBreaktime] = React.useState(3)
-  const [sessionTime, setSessionTime] = React.useState(5)
+  const [displayTime, setDisplayTime] = React.useState(60 * 25)
+  const [breakTime, setBreaktime] = React.useState(60 * 5)
+  const [sessionTime, setSessionTime] = React.useState(60 * 25)
   const [timerOn, setTimerOn] = React.useState(false)
   const [onBreak, setOnBreak] = React.useState(false)
   const [breakAudio, setBreakAudio] = React.useState(
-    new Audio("./doublebeep.mp3")
+    new Audio("./double-beep.mp3")
   )
 
   const playBreakSound = () => {
